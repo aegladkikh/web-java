@@ -1,5 +1,7 @@
 'use strict';
 
+import '../scss/app.scss';
+
 const React = require('react');
 const ReactDOM = require('react-dom');
 const client = require('./client');
@@ -30,7 +32,7 @@ class EmployeeList extends React.Component{
 			<Employee key={employee._links.self.href} employee={employee}/>
 		);
 		return (
-			<table>
+			<table className="table">
 				<tbody>
 					<tr>
 						<th>First Name</th>
